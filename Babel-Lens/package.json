@@ -1,0 +1,59 @@
+{
+  "name": "babel-lens",
+  "publisher": "Kathit-dev",
+  "displayName": "Babel Lens",
+  "description": "Translates code comments into multiple languages using Google Translate API",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "license": "MIT",
+
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Kathitjoshi/Babel-Lens"
+},
+
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commentTranslator.translateAllComments",
+        "title": "Translate All Comments",
+        "category": "Comment Translator"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "commentTranslator.translateAllComments",
+          "group": "1_modification",
+          "when": "editorHasSelection == false"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "commentTranslator.translateAllComments",
+          "title": "Comment Translator: Translate All Comments"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed'",
+    "watch": "echo 'Watching...'",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  },
+  "dependencies": {}
+}
