@@ -218,7 +218,7 @@ If you find this extension helpful:
 - **VS Code Marketplace**: [Install Extension](https://marketplace.visualstudio.com/items?itemName=Kathit-dev.babel-lens)
 - **GitHub Repository**: [Source Code](https://github.com/Kathitjoshi/Babel-Lens)
 - **Report Issues**: [Bug Reports](https://github.com/Kathitjoshi/Babel-Lens/issues)
-- **Feature Requests**: [Suggestions](https://github.com/Kathitjoshi/Babel-Lens/discussions)
+- **Feature Requests**: [Suggestions](https://github.com/Kathitjoshi/Babel-Lens/pulls)
 
 ---
 
